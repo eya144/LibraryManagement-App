@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="346.0" prefWidth="524.0" stylesheets="@../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDictionnary">
+   <children>
+      <ImageView fitHeight="449.0" fitWidth="675.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dictionnaire.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="242.0" layoutY="216.0" />
+      <Label layoutX="220.0" layoutY="45.0" text="Add Dictionnary" textFill="#9a1111">
+         <font>
+            <Font name="Bodoni MT" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ft1" layoutX="295.0" layoutY="155.0" prefHeight="33.0" prefWidth="198.0" />
+      <TextField fx:id="ft2" layoutX="295.0" layoutY="212.0" prefHeight="33.0" prefWidth="198.0" />
+      <Label layoutX="189.0" layoutY="158.0" text="title :">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="216.0" text="Author :">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="b1" layoutX="191.0" layoutY="299.0" mnemonicParsing="false" onAction="#add" prefHeight="39.0" prefWidth="87.0" stylesheets="@../resources/dark-theme.css" text="Add" />
+      <Button fx:id="b2" layoutX="474.0" layoutY="299.0" mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="104.0" text="Clear" />
+   </children>
+</AnchorPane>

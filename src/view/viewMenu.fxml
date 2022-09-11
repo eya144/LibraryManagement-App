@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="573.0" stylesheets="@../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.viewMenu">
+   <children>
+      <ImageView fitHeight="398.0" fitWidth="587.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/123.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="129.0" layoutY="97.0" prefHeight="253.0" prefWidth="158.0">
+         <children>
+            <Button fx:id="book" mnemonicParsing="false" onAction="#viewBooks" prefHeight="65.0" prefWidth="142.0" text="Book" />
+            <Button fx:id="dictionary" mnemonicParsing="false" onAction="#viewDictionarys" prefHeight="62.0" prefWidth="143.0" text="Dictionary" />
+            <Button fx:id="magazine" mnemonicParsing="false" onAction="#viewMagazines" prefHeight="63.0" prefWidth="144.0" text="Magazine" />
+            <Button fx:id="newspaper" mnemonicParsing="false" onAction="#viewNewsPapers" prefHeight="64.0" prefWidth="145.0" text="News paper" />
+         </children>
+      </VBox>
+      <Label layoutX="83.0" layoutY="27.0" text="Our Products" textFill="#970808">
+         <font>
+            <Font name="Baskerville Old Face" size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
